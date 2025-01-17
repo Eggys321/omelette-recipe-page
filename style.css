@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --white:hsl(0, 0%, 100%);
+    --stone-100:hsl(30, 54%, 90%);
+    --stone-150:hsl(30, 18%, 87%);
+    --stone-600:hsl(30, 10%, 34%);
+    --stone-900:hsl(24, 5%, 18%);
+    --brown-800:hsl(14, 45%, 36%);
+    --rose-800:hsl(332, 51%, 32%);
+    --rose-50:hsl(330, 100%, 98%);
+    --ff-young-serif:"Young Serif", serif;
+    --ff-outfit:"Outfit", serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* utils */
+.container{
+    max-width: 90%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 0 1rem;
+}
+/* section-1 */
+.section-1 img{
+    max-width: 100%;
+}
+
+/* section-2 */
+.section-2 h1{
+    font-family: var(--ff-young-serif);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--stone-900);
+    padding: 1rem 0;
+}
+.section-2 p{
+    font-size: 16px;
+    font-family: var(--ff-outfit);
+    color: var(--stone-600);
+    font-weight: 400;
+    padding-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.section-2-div{
+    background-color: var(--rose-50);
+    padding:30px;
+}
+
+.section-2-div h3{
+    font-family: var(--ff-outfit);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--rose-800);
+    border-radius: 10px;
+}
+
+.section-2-div ul li::marker{
+    color: var(--rose-800);
+}
+.section-2-div ul{
+    padding: 0 26px;
+}
